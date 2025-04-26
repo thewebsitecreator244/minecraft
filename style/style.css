@@ -133,6 +133,17 @@ ul,ol,li {
     font-weight: 500;
     text-shadow: 3px 3px 3px black;
 }
+
+
+/* ========================aboutgame */
+.about-game {
+
+}
+
+.about-game__content {
+    height: 60vh;
+}
+
 /* ======================footer */
 .link-messenger{
     width: 48px;
@@ -163,6 +174,7 @@ ul,ol,li {
     border-image: linear-gradient(90deg, #47d1ff 0%, #00fa4b 100%);
     border-image-slice: 1;
 }
+
 
 /*======== adaptive*/
 @media (max-width:768px) {
