@@ -140,9 +140,59 @@ ul,ol,li {
 
 }
 
+
+
 .about-game__content {
     height: 60vh;
 }
+
+#slider{
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #00fa4b;
+    position: relative;
+}
+
+.slick-list{
+    overflow: hidden;
+}
+
+.slick-track{
+    gap: 10px;
+    display: flex;
+}
+.slick-slide{
+    background-color: rgb(255, 0, 0);
+    width: 100%;
+    height: 300px;
+}
+
+.slick-arrow{
+    width: 50px;
+    height: 50px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    border: none;
+    background-color: transparent;
+    font-size: 0;
+    color: transparent;
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    transform: translateY(-50%);
+
+}
+.slick-prev{
+    background-image: url(../img/arrow-left.svg);
+    left: -70px;
+
+}
+.slick-next{
+    background-image: url(../img/arrow-right.svg);
+    right: -70px;
+}
+
 
 /* ======================footer */
 .link-messenger{
