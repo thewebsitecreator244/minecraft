@@ -144,14 +144,14 @@ ul,ol,li {
 
 .about-game__content {
     height: 60vh;
-    display: flex;
+    /* display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: center; */
 }
 
 #slider{
-    max-width: 800px;
+    max-width: 80%;
     margin: 0 auto;
     position: relative;
 }
@@ -323,6 +323,16 @@ ul,ol,li{
     .hero__text {
         width: 90%;
     }
+    .slick-arrow{
+        display: none;
+    }
+    #slider{
+        max-width: 100%;
+    }
+    .about-game__content{
+        padding-top: 30px;
+    }
+    
     
 }
 @media (max-width:425px) {
