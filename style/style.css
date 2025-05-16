@@ -276,6 +276,70 @@ ul,ol,li{
 
 }
 
+/*===========================resources*/
+.resources {
+}
+.resources__content {
+}
+.list-cards {
+    /* display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+    align-items: center; */
+    gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+
+}
+.list-cards__item {
+}
+.card-mod {
+    /* max-width: 700px;
+    width: 100%; */
+    border: 2px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 15px;
+    border-radius: 10px;
+
+}
+.card-mod:hover .card-mods__img{
+    transform: scale(1.1);
+
+}
+.card-mod__wrapper-img {
+    width: 100%;
+    height: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.card-mods__img {
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+    transition: transform 0.4s;
+
+}
+.card-mod__link {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: #00fa4b;
+    color: white;
+    text-decoration: none;
+    padding: 15px 40px;
+    border-radius: 10px;
+    text-transform: capitalize;
+    font-size: 20px;
+    font-family: "Tektur", sans-serif;
+    font-weight: 500;
+}
+
+
+
 
 /* ======================footer */
 .link-messenger{
@@ -312,7 +376,15 @@ ul,ol,li{
 
 
 /*======== adaptive*/
+@media (max-width:900px) {
+    .card-mod__link {
+        font-size: 18px;
+        padding: 5px 15px;
+    }
+    
+}
 @media (max-width:768px) {
+
     .header__navigation .container {
         flex-direction: column;
         gap: 10px;
@@ -331,6 +403,9 @@ ul,ol,li{
     }
     .about-game__content{
         padding-top: 30px;
+    }
+    .list-cards{
+        grid-template-columns: 1fr;
     }
     
     
